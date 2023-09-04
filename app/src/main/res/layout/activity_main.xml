@@ -8,11 +8,15 @@
 
     <TextView
         android:id="@+id/received_value_id"
-        android:layout_width="98dp"
-        android:layout_height="44dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
 
     <EditText
         android:id="@+id/send_text_id"
@@ -21,15 +25,23 @@
         android:ems="10"
         android:hint="enter your name"
         android:inputType="text"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
 
     <Button
         android:id="@+id/send_button_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="send"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="164dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

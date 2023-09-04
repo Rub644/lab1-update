@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         send_button.setOnClickListener(v -> {
             String str = send_text.getText().toString();
-            receiver_msg.setText("hello, "+str);
+            receiver_msg.setText("hello, "+""+str+"");
         });
 
 
