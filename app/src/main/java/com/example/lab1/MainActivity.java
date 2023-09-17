@@ -3,6 +3,7 @@ package com.example.lab1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,17 +23,19 @@ public class MainActivity extends AppCompatActivity {
 
         send_button = findViewById(R.id.send_button_id);
         send_text = findViewById(R.id.send_text_id);
-        receiver_msg = (TextView) findViewById(R.id.received_value_id);
 
 
         send_button.setOnClickListener(v -> {
             String str = send_text.getText().toString();
-            receiver_msg.setText("hello, "+""+str+"");
+            openActivity2(str);
         });
 
 
     }
 
-
+public void openActivity2(String str){
+        Intent intent =new Intent(this, MainActivity2.class);
+        intent.putExtra("message_key",str);
+    startActivity(intent);}
 
 }
